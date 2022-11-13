@@ -1,12 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import styled from "styled-components";
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <img src={logo} alt="Logo" />
-      <Logo>LOGO</Logo>
+      <Link to="/">
+        <LogoImg src={logo} alt="Logo" />
+        <LogoImg />
+        <Logo>LOGO</Logo>
+      </Link>
     </HeaderContainer>
   );
 };
@@ -22,8 +26,13 @@ const HeaderContainer = styled.div`
   background-color: white;
 `;
 
+const LogoImg = styled.img`
+  margin-top: 10px;
+`;
+
 const Logo = styled.h1`
   font-size: 20px;
   font-weight: 500;
   color: #353449;
+  float: right;
 `;
