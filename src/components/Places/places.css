@@ -1,0 +1,27 @@
+.addressContainer{
+    max-width:93%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color:#f8f8fa;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    margin: 10px 0 0 23px;
+}
+
+.addressTitle{
+    flex-basis: 25%;
+}
+
+.addressTitle h4{
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 35px;
+    color: #6e6d7d;
+}
+
+.addressAll p{
+    color: #6e6d7d;
+}
+
